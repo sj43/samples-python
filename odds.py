@@ -218,7 +218,7 @@ def gmail_send_message():
       creds.refresh(Request())
     else:
       flow = InstalledAppFlow.from_client_secrets_file(
-          "credentials.json", SCOPES
+          "C:\GithubProjects\sports-arbitrage\samples-python\credentials.json", SCOPES
       )
       creds = flow.run_local_server(port=0)
     # Save the credentials for the next run
@@ -236,7 +236,7 @@ def gmail_send_message():
        exit(0)
         # message.set_content('No Arbitrage Found')
 
-    message["To"] = "seunghunjang956@gmail.com;tomcho0515@gmail.com"
+    message["To"] = "seunghunjang956@gmail.com;tomcho0515@gmail.com;jihoonyangg@gmail.com"
     message["From"] = "seunghunjang956@gmail.com"
     message["Subject"] = "Sports Arbitrage Notification"
 

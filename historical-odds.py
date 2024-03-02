@@ -19,7 +19,7 @@ args = parser.parse_args()
 
 # An api key is emailed to you when you sign up to a plan
 # Get a free API key at https://api.the-odds-api.com/
-API_KEY = args.api_key or 'YOUR_API_KEY'
+API_KEY = args.api_key or ''
 
 # Sport key
 # More info at https://the-odds-api.com/sports-odds-data/sports-apis.html
